@@ -15,6 +15,7 @@
 <style>
    body{
     font-family: 'PT Serif', serif;
+    background-color: rgb(247, 231, 231);
   }
         /* hover css */
     #navbarSupportedContent ul li:hover{
@@ -47,7 +48,10 @@
     #categories{
         position: relative;
         justify-content: center;
-        background-color: sandybrown;
+        background-color: #3e4042;
+        
+      
+
         
     }
     /* map css */
@@ -247,12 +251,102 @@ position:absolute;
   width: 100;
   height: 100;
       }
-      
+      /* jumbtron css */
+      .jumbotron {
+ background-image: url(images/clientback.jpg);
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+      /* cards css */
+      /*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+  text-align: center;
+  
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #00acc1;
+}
 </style>
 <body>
-    <header id="head">
+    <header id="head" >
     
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light" >
             <div id="logo">
           <a class="navbar-brand" href="#"><img src="images/digital imaging systems.png" alt="logo" height="150rem" width="480rem"  id="img1"></a>
         </div>       
@@ -260,11 +354,11 @@ position:absolute;
               <span class="navbar-toggler-icon bg-light"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent" >
                 
               <ul class="navbar-nav mx-auto pt-5">
                 <li class="nav-item active">
-                  <a class="nav-link active" href="index.html" style="color: darkorange;">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="index.html" style="color: #3c32cd;">Home <span class="sr-only">(current)</span></a>
                 </li>
                 
                 <li class="nav-item ">
@@ -289,7 +383,7 @@ position:absolute;
                 <section>
                     <div id="categories" class="text-dark col-sm-12">
                         <div class="btn-group text-dark" id="subbtn">
-                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#">
+                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#" style="height: 34px;">
                               Our Products
                               <span class="caret"></span>
                             </a>
@@ -301,7 +395,7 @@ position:absolute;
                             </ul>
                           </div>
                           <div class="btn-group" id="subbtn">
-                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#">
+                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#" style="height: 34px;">
                               Price List
                               <span class="caret"></span>
                             </a>
@@ -312,7 +406,7 @@ position:absolute;
                             </ul>
                           </div>
                           <div class="btn-group" id="subbtn">
-                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#">
+                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#" style="height: 34px;">
                               Our Clients
                               <span class="caret"></span>
                             </a>
@@ -322,7 +416,7 @@ position:absolute;
                             </ul>
                           </div>
                           <div class="btn-group" id="subbtn">
-                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#">
+                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#" style="height: 34px;">
                               Our offices
                               <span class="caret"></span>
                             </a>
@@ -334,7 +428,7 @@ position:absolute;
                             </ul>
                           </div>
                           <div class="btn-group" id="subbtn">
-                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#">
+                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#" style="height: 34px;">
                               Our Vision/Aim
                               <span class="caret"></span>
                             </a>
@@ -345,7 +439,7 @@ position:absolute;
                             </ul>
                           </div>
                           <div class="btn-group" id="subbtn">
-                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#">
+                            <a class="btn dropdown-toggle text-light" data-toggle="dropdown" href="#" style="height: 34px;">
                               Info Desk
                               <span class="caret"></span>
                             </a>
@@ -375,37 +469,39 @@ position:absolute;
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://images.pexels.com/photos/3376799/pexels-photo-3376799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-holder-rendered="true">
+              <img class="d-block w-100" height="500" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="images/main.png" data-holder-rendered="true">
               <div class="carousel-caption d-none d-md-block">
-                         </div>
+                <h1 style="padding-bottom: 10px; font-size: 50px;" >Digital <span style="color: rgb(255, 1, 1); font-weight: bold;"> Imaging </span> Systems</h1>
+                <p style="font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-style: oblique; margin-bottom: 70px; font-size: 25px;color: orange;"> <span >Medical Devices Company</span> <br> Providing Quality of Devices is our purity.
+              </div>
             </div>
-            <div class="carousel-item">
+                      <div class="carousel-item" >
                 <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" data-holder-rendered="true">
                 <div class="carousel-caption">
                 </div>   
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://images.unsplash.com/photo-1579684288361-5c1a2957a700?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" data-holder-rendered="true">
-                <div class="carousel-caption">
-                </div>   
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://images.unsplash.com/photo-1579684453401-966b11832744?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1068&q=80" data-holder-rendered="true">
-                <div class="carousel-caption">
-                </div>   
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1068&q=80" data-holder-rendered="true">
-                <div class="carousel-caption">
-                </div>   
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://images.wsj.net/im-127798?width=620&size=1.5" data-holder-rendered="true">
-                <div class="carousel-caption">
-                </div>   
-              </div>
-              <div class="carousel-item">
                 <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://stmedia.startribune.com/images/ows_144971489282619.jpg" data-holder-rendered="true">
+                <div class="carousel-caption">
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://wallpaperaccess.com/full/619994.jpg" data-holder-rendered="true">
+                <div class="carousel-caption">
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://thumbs.dreamstime.com/b/medicine-doctor-touching-electronic-medical-record-tablet-dna-digital-healthcare-network-connection-hologram-modern-virtual-154742526.jpg" data-holder-rendered="true">
+                <div class="carousel-caption">
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-holder-rendered="true">
+                <div class="carousel-caption">
+                </div>   
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" height="500px" data-src="holder.js/900x300?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [900x300]" src="https://image.freepik.com/free-photo/lady-woman-doctor-wear-medical-mask-protect-infection-from-germ-bacteria-covid19-corona-sars-influenza-virus_139507-182.jpg" data-holder-rendered="true">
                 <div class="carousel-caption">
                 </div>   
               </div>
@@ -432,6 +528,160 @@ position:absolute;
       
 </section>
 
+<section>
+  <div class="text-center pt-5 " >
+    <h1 style="color:#007bff;" style="font-size: 75px; padding-top: 10px;">Our Products</h1><hr style="background-color:#007bff; border-radius: 5px; height: 3px; width: 260px;">
+  </div>
+  <div id="cards_landscape_wrap-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="https://www.cardiovascular.abbott/us/en/home.html" target="_blank">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="images/card1.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Xience Alpine</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="https://www.cardiovascular.abbott/int/en/hcp/products/percutaneous-coronary-intervention/xience-xpedition-everolimus-eluting-stent.html" target="_blank">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="images/card2.png" alt="" />
+                            </div>
+                            <div class="text-container">                                    
+                                <h6>Xience Xpedtion</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="https://www.xiencestent.com/" target="_blank">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="images/card3.jpg" alt="" />
+                            </div>
+
+                            <div class="text-container">
+                                <h6>Xience Prime</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="https://www.cardiovascular.abbott/us/en/home.html" target="_blank">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="images/card4.jfif" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Xience V</h6>
+                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>  
+<!-- clients start -->
+<section class="  jumbotron " >
+  <div>  
+      <div>
+        <div class="container jumbotron text-light  " style="font-weight: bolder;">
+          <h1 class="text-center text-primary" style="font-size: 68px; padding-bottom: 50px;" >Our Clients <hr class="bg-primary" style="width: 220px;"> </h1>
+          <div class="media pt-3">
+            <img class="d-flex pr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="images/Client1.jpg" data-holder-rendered="true" style="width: 90px; height: 90px;">
+            <div class="media-body">
+              <h5 class="pt-0" style="position: relative; top: 23px; font-size: 30px;">Punjab Institute Of Cardiology, Lahore</h5>
+                      </div>
+          </div>
+          <div class="media pt-3">
+            <img class="d-flex pr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="images/client5.png" data-holder-rendered="true" style="width: 90px; height: 90px;">
+            <div class="media-body">
+              <h5 class="pt-0" style="position: relative; top: 23px; font-size: 30px;">Jinnah Hospital, Lahore</h5>
+                      </div>
+          </div>
+          <div class="pt-5">
+            <div class="media">
+              <img class="d-flex pr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="images/Client2.jpg" data-holder-rendered="true" style="width: 90px; height: 90px;">
+              <div class="media-body">
+                <h5 class="pt-0" style="position: relative; top: 23px; font-size: 30px;">Doctor Hospital, Lahore</h5>
+                </div>
+          </div>
+          <div class="pt-5">
+            <div class="media">
+              <img class="d-flex pr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="images/client3.jpg" data-holder-rendered="true" style="width: 90px; height: 90px;">
+              <div class="media-body">
+                <h5 class="pt-0" style="position: relative; top: 23px; font-size: 30px;">Faisalabad Institute Of Cardiology, Faisalabad</h5>
+                          </div>
+          </div>
+          <div class="pt-5">
+            <div class="media">
+              <img class="d-flex pr-3" data-src="holder.js/64x64?theme=sky" alt="64x64" src="images/client4.jpg" data-holder-rendered="true" style="width: 90px; height: 90px;">
+              <div class="media-body">
+                <h5 class="pt-0" style="position: relative; top: 23px; font-size: 30px;">       Ittefaq Hospital, Lahore</h5>
+                 </div>
+                 
+                 
+                <div class="pt-5">       
+              <div id="moreser" >
+              <a href="clients.html"><button style=" position: relative; right: 28rem; top: 120px;" type="button" class="btn btn-primary btn-lg border border-dark">More Clients</button></a>
+            </div>
+            </div>
+          </div>
+          </section>
+    
+    
+  </div>
+</section>
+<!-- about us -->
+<section>
+  <div class="text-dark   " style="font-weight: bolder; background-color: rgb(247, 231, 231);">
+    <h1 class="text-center text-dark" style="font-size: 50px; padding-bottom: 50px;" >About Us<hr class="bg-dark" style="width: 220px;"> </h1>
+    <p class="container text-center" style=" position: relative; bottom: 50px;">
+      <marquee behavior="overflow" direction="right" loop="infinite" scrollamount="25" ><img src="images/ambulance.gif" height="100px" alt=""></marquee>
+      Digital Imaging Systems (DIS) was formed in 1995 with its Head Office in Lahore, Pakistan. Since the inception, our mission has always been to attain highest standards of service through practicing professional ethics and hard work. This has helped us to attain great respect and profile in our line of business. With ultimate research and development in the field of Interventional Cardiology,
+      the line of products has kept changing at a rapid pace.
+But we have always kept our product offerings aligned with new innovations and technology. What We Do To make Quality Assured Products All the Principal we represent are world’s top most brand leaders and enjoy
+maximum market share worldwide because of the top quality products. We being their sole and authorised distributors have to follow the strict regulation in imports, storage and supply chain. All this results in products of unmatched quality and great customer-satisfaction.
+What We Do To make Quality Assured Products
+We have a reliable vendor base from where we source raw materials. Our vendor base is created after collecting samples of the material and tested them to ensure conformance to the set industry standards. In addition to this, we make visit to production facility of the company or vendors from whom we source our raw materials. All these efforts results,
+in products of unmatched quality and greater customer-satisfaction.
+
+Our Team
+We have a team of highly efficient professionals who are qualified with vast experience of Sales and Marketing, Storage, Handling and Supplying the products as per international standards..
+
+Social Conduct
+We strictly follow Code of Conduct of International Standards laid down by our Principals, ethical business practices and respect internationally accepted human and labour rights of the country. As a result,
+we create a healthy and safe workplace for our employees to work.
+
+Head Office : 121 Shadman II, Ghaus Ul Azam Road, Lahore-54000, Pakistan
+Phone Line : 92-42-35407151-53, Fax: 92-42-35407154
+Email Address : info@DigitalImagingSystems.pk
+
+
+DIS NORTH : House No.15 A, Valley Road,Westrige, The Mall, Rawalpindi
+Phone Line : 92-51-5491359, Fax: 92-51-5461851
+DIS SOUTH :Caesar's Tower, 503, 5th Floor St-10, Opp. Aisha Bawani School, Shahra-e-Faisal Karachi
+Phone Line : 92-21-32788866, Fax: 92-21-32788865</b>b></p></p>
+</section>
 <section>
    
   <!-- Footer  -->
